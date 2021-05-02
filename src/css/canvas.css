@@ -1,0 +1,52 @@
+#canvasContainer {
+  width: 1000px;
+  margin: 10px;
+  height: 800px;
+  border: 1px solid blue;
+}
+
+.mainContainer {
+  background-color: white;
+  margin: auto;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 0px;
+  max-width: 1020px;
+}
+
+.menuContainer {
+  background-color: lightgrey;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+.info > li {
+  display: inline-block;
+}
+
+.infoLinks {
+  float: right;
+}
+
+.infoText {
+  max-width: 300px;
+  float: left;
+}
+
+.infoDiv {
+  float: right;
+  max-width: 600px;
+}
+
+.referenceLinks {
+  background-color: grey;
+  padding: 4px;
+  margin-left: 20px;
+}
+
+.referenceLinks > li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

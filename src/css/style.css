@@ -1,0 +1,13 @@
+html {
+  /*background-color: rgb(29, 30, 32);*/
+  background-color: lightgrey;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.listNoStyle {
+  list-style: none;
+}

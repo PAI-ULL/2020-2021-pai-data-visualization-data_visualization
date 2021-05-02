@@ -1,0 +1,14 @@
+
+body {
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.menuLink {
+  background-color: palegoldenrod;
+  max-width: 600px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
