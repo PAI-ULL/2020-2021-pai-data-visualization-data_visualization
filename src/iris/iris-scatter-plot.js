@@ -35,7 +35,19 @@ export class Iris {
       scales: {
         x: {
           type: 'linear',
-          position: 'bottom'
+          position: 'bottom',
+          title: {
+            display: true,
+            text: 'Petal Length',
+            align: 'center'
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Petal Width',
+            align: 'center'
+          }
         }
       }
     }
