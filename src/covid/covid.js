@@ -18,47 +18,6 @@
  */
 'use strict'
 
-/*const CTX = document.getElementById('myChart').getContext('2d');
-document.getElementById('myChart').width = document.documentElement.clientWidth;
-document.getElementById('myChart').height = document.documentElement.clientHeight;
-
-const myChart = new Chart(CTX, {
-  type: 'bar',
-  data: {
-    labels: ['16 april', '18 april', '19 april', '20 april', '21 april', '22 april', '23 april'],
-    datasets: [{
-      label: 'New cases of COVID-19',
-      data: [5087, 27725, 5113, 3776, 8258, 9868, 5461],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.5)',
-        'rgba(54, 162, 235, 0.5)',
-        'rgba(255, 206, 86, 0.5)',
-        'rgba(75, 192, 192, 0.5)',
-        'rgba(153, 102, 255, 0.5)',
-        'rgba(255, 159, 64, 0.5)',
-        'rgba(255, 159, 104, 0.5)'
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)',
-        'rgba(255, 159, 104, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-});*/
-
 /**
  * @class
  * @description Esta clase fue diseñada para ser el ejemplo de como hacer un
