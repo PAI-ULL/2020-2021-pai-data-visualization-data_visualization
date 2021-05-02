@@ -11,11 +11,17 @@
  * @link https://archive.ics.uci.edu/ml/datasets/iris
  * @description Este script fue diseñado para ser el ejemplo de como visualizar
  * el iris dataset en un scatter-plot utilizando la libreria chat.js. Visualiza
- * 3 categrias del los flores iris (setosa, versicolor, Virginica)
+ * 3 categorias del los flores iris (setosa, versicolor, Virginica)
  */
 
 import { irisRawData } from "./irisData.js";
 
+/**
+ * @class
+ * @description Esta clase fue diseñada para ser el ejemplo de como visualizar
+ * el iris dataset en un scatter-plot utilizando la libreria chat.js. Visualiza
+ * 3 categorias del los flores iris (setosa, versicolor, Virginica)
+ */
 export class Iris {
   #canvas = document.createElement('canvas'); /** canvas html element*/
   #context = this.#canvas.getContext('2d'); /** we are using 2d canvas */
@@ -43,7 +49,7 @@ export class Iris {
     this.#canvas.width = parseInt(containerElementSize.width);
     this.#canvas.height = parseInt(containerElementSize.height);
     containerElement.appendChild(this.#canvas);
-    this.#chart = new Chart (this.#context,this.#CHART_CONFIG);
+    this.#chart = new Chart(this.#context, this.#CHART_CONFIG);
   }
 
   /**
