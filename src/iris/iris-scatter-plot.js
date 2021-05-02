@@ -9,13 +9,21 @@
  * Email institucional: thaddaus.haase.32@ull.edu.es - alu0101101019
  * @since 01/05/2021
  * @link https://archive.ics.uci.edu/ml/datasets/iris
- * @description Este script fue diseñado para ser el ejemplo de como visualizar
- * el iris dataset en un scatter-plot utilizando la libreria chat.js. Visualiza
- * 3 categrias del los flores iris (setosa, versicolor, Virginica)
+ * @description This module implements the visualization of the Iris dataset
+ * inside a Scatter-Plot with the chart.js library. Compares the three types
+ * of iris flowers inside of the dataset, which are: (Setosa, Sersicolor,
+ * Virginica)
  */
 
 import { irisRawData } from "./irisData.js";
 
+/**
+ * @class
+ * This module implements the visualization of the Iris dataset
+ * inside a Scatter-Plot with the chart.js library. Compares the three types
+ * of iris flowers inside of the dataset, which are: (Setosa, Sersicolor,
+ * Virginica)
+ */
 export class Iris {
   #canvas = document.createElement('canvas'); /** canvas html element*/
   #context = this.#canvas.getContext('2d'); /** we are using 2d canvas */
@@ -34,6 +42,7 @@ export class Iris {
   };
 
   /**
+   * @public
    * The constructor receives a HTML DOM element to know where to place the
    * canvas element created in #canvas
    * @param {htmlDOMElement} containerElement container element for canvas
