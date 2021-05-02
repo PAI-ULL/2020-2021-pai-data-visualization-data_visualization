@@ -12,7 +12,7 @@
  * @description This script shows an example of creating a bar chart en
  * chart.js for the presentation "Data Visualization". The bar chart
  * will be implemented using canvas and represents the daily covid
- * cases from the week 16/04/2021 al 23/04/2021.
+ * cases from the week 16/04/2021 to 23/04/2021.
  */
 'use strict'
 
@@ -21,7 +21,7 @@
  * @description This script shows an example of creating a bar chart en
  * chart.js for the presentation "Data Visualization". The bar chart
  * will be implemented using canvas and represents the daily covid
- * cases from the week 16/04/2021 al 23/04/2021.
+ * cases from the week 16/04/2021 to 23/04/2021.
  */
 export class CovidBarChart {
   #canvas = document.createElement('canvas'); /** canvas html element*/
