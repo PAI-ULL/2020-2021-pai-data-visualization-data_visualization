@@ -9,23 +9,19 @@
  * Email institucional: thaddaus.haase.32@ull.edu.es - alu0101101019
  * @since 01/05/2021
  * @link https://www.rtve.es/noticias/20210428/mapa-del-coronavirus-espana/2004681.shtml
- * @description Este script fue diseñado para ser el ejemplo de como hacer un
- * diagrama de barras en chart.js para la presentación "Data Visualization" de
- * la asignatura Programación de aplicaciones interactivas. Este script
- * incrusta un diagrama de barras en el html que lo carge. El diagrama de
- * barras representa los casos de coronavirus diarios en España en la semana
- * del 16/04/2021 al 23/04/2021
+ * @description This script shows an example of creating a bar chart en
+ * chart.js for the presentation "Data Visualization". The bar chart
+ * will be implemented using canvas and represents the daily covid
+ * cases from the week 16/04/2021 al 23/04/2021.
  */
 'use strict'
 
 /**
  * @class
- * @description Esta clase fue diseñada para ser el ejemplo de como hacer un
- * diagrama de barras en chart.js para la presentación "Data Visualization" de
- * la asignatura Programación de aplicaciones interactivas. Este script
- * incrusta un diagrama de barras en el html que lo carge. El diagrama de
- * barras representa los casos de coronavirus diarios en España en la semana
- * del 16/04/2021 al 23/04/2021
+ * @description This script shows an example of creating a bar chart en
+ * chart.js for the presentation "Data Visualization". The bar chart
+ * will be implemented using canvas and represents the daily covid
+ * cases from the week 16/04/2021 al 23/04/2021.
  */
 export class CovidBarChart {
   #canvas = document.createElement('canvas'); /** canvas html element*/
