@@ -19,7 +19,6 @@ This repository follows this directory structure:
               ├── iris-scatter-plot.js
               ├── index.html
               ├── irisData.js
-              ├── rtweather.js
         ├── sin                # Animated line chart of a sine wave
               ├── sinusoid.js   
               ├── index.html
