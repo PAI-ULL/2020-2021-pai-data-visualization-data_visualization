@@ -64,7 +64,7 @@ export class Iris {
     this.#canvas.width = parseInt(containerElementSize.width);
     this.#canvas.height = parseInt(containerElementSize.height);
     containerElement.appendChild(this.#canvas);
-    this.#chart = new Chart (this.#context,this.#CHART_CONFIG);
+    this.#chart = new Chart(this.#context, this.#CHART_CONFIG);
   }
 
   /**

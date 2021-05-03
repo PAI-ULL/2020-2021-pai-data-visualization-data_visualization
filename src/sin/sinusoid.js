@@ -21,7 +21,7 @@ export class Sinusoid {
   #chart = undefined; /** Holds new Chart we will create in constructor */
   #lastUpdateTime = 0; /** Always contains last time charts was updated */
   #UPDATE_INTERVAL = 0.05; /** Time between each update */
-  #SIN_INCREMENT = 0.07 /** Increment for sin wave calculation */
+  #SIN_INCREMENT = 0.07; /** Increment for sin wave calculation */
   #CHART_NUMBER_OF_POINTS = 100; /** Points in chart */
   #sinIncrementData = []; /** Array containg information for each point */
 
@@ -62,7 +62,7 @@ export class Sinusoid {
     this.#canvas.width = parseInt(containerElementSize.width);
     this.#canvas.height = parseInt(containerElementSize.height);
     containerElement.appendChild(this.#canvas);
-    this.#chart = new Chart (this.#context,this.#config)
+    this.#chart = new Chart(this.#context, this.#config);
     this.#updateOverTime();
   }
 
@@ -74,21 +74,21 @@ export class Sinusoid {
    */
   #defineData() {
     let dataArray = [];
-    let labelF = [];
+    let labelValues = [];
     for (let i = 0; i < this.#CHART_NUMBER_OF_POINTS; i++) {
       this.#sinIncrementData.push(i * this.#SIN_INCREMENT)
       dataArray.push(Math.sin(i * this.#SIN_INCREMENT));
-      labelF.push(i);
+      labelValues.push(i);
     }
     const sinusoidData = {
-    labels: labelF,
-    datasets: [{
+      labels: labelValues,
+      datasets: [{
         label: 'Sinusoid',
         data: dataArray,
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1
-    }]
+        tension: 0.1 /** bezier curve tension */
+      }]
     };
     return sinusoidData;
   }
@@ -116,11 +116,11 @@ export class Sinusoid {
   #shiftToNextPosition() {
     this.#sinIncrementData.shift();
     let lastElement = this.#sinIncrementData[
-        this.#sinIncrementData.length - 1];
-    this.#sinIncrementData.push(lastElement+this.#SIN_INCREMENT);
+      this.#sinIncrementData.length - 1];
+    this.#sinIncrementData.push(lastElement + this.#SIN_INCREMENT);
     this.#chart.data.datasets[0].data.shift();
     this.#chart.data.datasets[0].data.push(
-        Math.sin(lastElement+this.#SIN_INCREMENT));
+      Math.sin(lastElement + this.#SIN_INCREMENT));
     this.#chart.data.labels = this.#getUpdatedLabels();
     this.#chart.update();
   }
