@@ -86,12 +86,12 @@ export class Iris {
         color: '#2ca02c',
         data: []
       }
-    }
+    };
     for (let i = 0; i < irisRawData.length; i++) {
       const CURRENT_FLOWER = {
         x: parseFloat(irisRawData[i]["\"petal.length\""]),
         y: irisRawData[i]["\"petal.width\""]
-      }
+      };
       irisFlowerTypes[irisRawData[i]["\"variety\""]].data.push(CURRENT_FLOWER);
     }
     let irisData = {

@@ -78,7 +78,7 @@ export class Sinusoid {
     for (let i = 0; i < this.#CHART_NUMBER_OF_POINTS; i++) {
       this.#sinIncrementData.push(i * this.#SIN_INCREMENT)
       dataArray.push(Math.sin(i * this.#SIN_INCREMENT));
-      labelValues.push(i);
+      labelValues.push(this.#sinIncrementData[i]);
     }
     const sinusoidData = {
       labels: labelValues,
